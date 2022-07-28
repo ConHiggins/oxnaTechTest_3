@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ToDo.scss";
 
-const ToDo = ({ value }) => {
+const ToDo = ({ value, deprcTDList, k }) => {
     const [strike, setStrike] = useState(false);
     const [style, setStyle] = useState("none");
 
@@ -17,6 +17,10 @@ const ToDo = ({ value }) => {
         handleStyle(strike);
     }, [strike]);
 
+    const handleDeprcTD = () => {
+        deprcTDList(k);
+    };
+
     return (
         <div className="to-do">
             <input
@@ -27,7 +31,9 @@ const ToDo = ({ value }) => {
             <p className="to-do__title" style={{ textDecoration: style }}>
                 {value}
             </p>
-            <button className="to-do__delete">|||</button>
+            <button className="to-do__delete" onClick={handleDeprcTD}>
+                |||
+            </button>
         </div>
     );
 };

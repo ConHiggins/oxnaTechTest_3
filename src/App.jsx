@@ -8,26 +8,37 @@ import { useState } from "react";
 function App() {
     const [toDos, setToDos] = useState([]);
     const [input, setInput] = useState("");
+    const [deleteIndex, setDeleteIndex] = useState(toDos.length);
 
     const handleInput = (event) => {
-        console.log(event.target.value);
         setInput(event.target.value);
+    };
+
+    const handleDelIndex = (event) => {
+        setDeleteIndex(event.target.key);
     };
 
     const addToDo = (tds, inp) => {
         let tempToDos = [...tds];
         tempToDos.push(inp);
         setToDos(tempToDos);
-        console.log("temp" + tempToDos);
+        return tempToDos;
+    };
+
+    const remvToDo = (tds, i) => {
+        let tempToDos = [...tds];
+        tempToDos.splice(i, 1);
+        setToDos(tempToDos);
         return tempToDos;
     };
 
     const updateTDList = () => {
         addToDo(toDos, input);
-        console.log(toDos);
     };
 
-    console.log(toDos);
+    const deprcTDList = (tdIndex) => {
+        remvToDo(toDos, tdIndex);
+    };
 
     return (
         <div className="App">
@@ -38,7 +49,7 @@ function App() {
                 addToDo={addToDo}
                 updateTDList={updateTDList}
             />
-            <ToDoContainer toDos={toDos} />
+            <ToDoContainer toDos={toDos} deprcTDList={deprcTDList} />
         </div>
     );
 }
