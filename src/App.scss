@@ -1,6 +1,9 @@
 @use "./_vars.scss" as *;
 
 .App {
+  position: absolute;
+  top: 100px;
+  margin-top: 1000px;
   text-align: center;
   max-width: 600px;
   font-family: "Jost";
@@ -8,7 +11,7 @@
 }
 
 @keyframes rise {
-  0%{top:100%}
+  0%{top:100%;}
   100%{top: 0;}
 }
 

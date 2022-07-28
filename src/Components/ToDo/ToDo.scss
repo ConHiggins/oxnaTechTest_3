@@ -2,13 +2,25 @@
 
 
 .to-do{
-
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 1rem;
     border: 2px solid darkslategray;
     border-radius: 0.5rem;
+    animation: 1s ease normal slide;
+
+    @keyframes slide {
+        0%{
+            right: -100%;
+            opacity: 0.5;
+        }
+        100% {
+            right:0;
+            opacity: 1;
+        }
+    }
     
 
     &__check{

@@ -9,6 +9,21 @@
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
+     position: relative;
+    text-align: center;
+    max-width: 600px;
+    font-family: "Jost";
+    animation: 2s ease normal rise ;
+    
+
+    @keyframes rise {
+    0%{
+        top:1000px;
+    }
+    100%{
+        top: 0;
+    }
+    }
 
     &__title{
         margin: 0.5rem;
