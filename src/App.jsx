@@ -10,12 +10,12 @@ function App() {
     const [input, setInput] = useState("");
     const [deleteIndex, setDeleteIndex] = useState(toDos.length);
 
-    const handleInput = (event) => {
-        setInput(event.target.value);
+    const resetToDos = () => {
+        setToDos([]);
     };
 
-    const handleDelIndex = (event) => {
-        setDeleteIndex(event.target.key);
+    const handleInput = (event) => {
+        setInput(event.target.value);
     };
 
     const addToDo = (tds, inp) => {
@@ -42,7 +42,7 @@ function App() {
 
     return (
         <div className="App">
-            <Navbar />
+            <Navbar resetToDos={resetToDos} />
             <Input
                 value={input}
                 handleInput={handleInput}
