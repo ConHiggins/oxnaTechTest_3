@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/oxnaTechTest_3/static/css/main.c36f8edd.css",
+    "main.css": "/oxnaTechTest_3/static/css/main.b4b78e9a.css",
     "main.js": "/oxnaTechTest_3/static/js/main.7254c0ec.js",
     "static/js/787.b56a9f5c.chunk.js": "/oxnaTechTest_3/static/js/787.b56a9f5c.chunk.js",
     "static/media/logo.svg": "/oxnaTechTest_3/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/oxnaTechTest_3/index.html",
-    "main.c36f8edd.css.map": "/oxnaTechTest_3/static/css/main.c36f8edd.css.map",
+    "main.b4b78e9a.css.map": "/oxnaTechTest_3/static/css/main.b4b78e9a.css.map",
     "main.7254c0ec.js.map": "/oxnaTechTest_3/static/js/main.7254c0ec.js.map",
     "787.b56a9f5c.chunk.js.map": "/oxnaTechTest_3/static/js/787.b56a9f5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c36f8edd.css",
+    "static/css/main.b4b78e9a.css",
     "static/js/main.7254c0ec.js"
   ]
 }
