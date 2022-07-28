@@ -36,6 +36,11 @@ const ToDo = ({ value, deprcTDList, k }) => {
             <button className="to-do__delete" onClick={handleDeprcTD}>
                 |||
             </button>
+            {strike && (
+                <p>
+                    <b>?</b>
+                </p>
+            )}
         </div>
     );
 };

@@ -5,7 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin: 1rem;
     border: 2px solid darkslategray;
     border-radius: 0.5rem;
@@ -48,6 +48,16 @@
         padding: 0.1rem;
         color: darkgray;
 
+        &:hover{
+            background: white;
+
+            &::before{
+                transform: rotate(45deg);
+                left: 0;
+                top: -7px;
+            }
+        }
+
         &::before{
             content: "";
             position: absolute;
@@ -62,6 +72,7 @@
             border-right: 4px solid transparent;
             border-bottom: 4px solid #555;
             border-radius: 10%;
+            transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease ;
 
         }
     }
