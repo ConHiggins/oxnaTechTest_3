@@ -9,11 +9,22 @@
     margin: 1rem;
     border: 2px solid darkslategray;
     border-radius: 0.5rem;
+    
+
+    &__check{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 1rem;
+    }
+
+    &__title {
+        text-decoration: none;
+    }
 
     &__delete {
 
         position: relative;
-        background: #555;
+        background: #545;
         height: 1.5rem;
         margin: 1rem;
         border: 2px solid #555;
