@@ -1,1 +1,22 @@
 @use "../../vars" as *;
+
+
+.input {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__textbox{
+        height: 1.8rem;
+        width: 80%;
+    }
+
+    &__add-button {
+
+        width: 2rem;
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+        border: 2px solid darkslategray;
+    }
+}
