@@ -5,6 +5,7 @@ const Input = ({ value, handleInput, addToDo, updateTDList }) => {
         <div className="input">
             <input
                 type="text"
+                placeholder={value}
                 className="input__textbox"
                 onInput={handleInput}
             />

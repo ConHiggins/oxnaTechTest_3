@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
     const [toDos, setToDos] = useState([]);
-    const [input, setInput] = useState("");
+    const [input, setInput] = useState("Add your text here...");
     const [deleteIndex, setDeleteIndex] = useState(toDos.length);
 
     const resetToDos = () => {
@@ -15,7 +15,9 @@ function App() {
     };
 
     const handleInput = (event) => {
-        setInput(event.target.value);
+        event.target.value
+            ? setInput(event.target.value)
+            : setInput("Add your text here...");
     };
 
     const addToDo = (tds, inp) => {
@@ -44,6 +46,7 @@ function App() {
         <div className="App">
             <Navbar resetToDos={resetToDos} />
             <Input
+                defaultValue={input}
                 value={input}
                 handleInput={handleInput}
                 addToDo={addToDo}

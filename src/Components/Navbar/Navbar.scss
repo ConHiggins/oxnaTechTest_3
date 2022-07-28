@@ -6,13 +6,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
 
+    &__title{
+        margin: 0.5rem;
+    }
 
     &__reset-button{
 
         width: 4rem;
         height: 2.4rem;
         background: none;
+        font-family: "Jost";
+        font-size: 1.2rem;
+        border-radius: 10%;
+        margin: 0.5rem;
     }
 }
