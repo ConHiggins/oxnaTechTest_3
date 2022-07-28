@@ -7,6 +7,7 @@ const ToDoContainer = ({ toDos, deprcTDList }) => {
 
     toDos.forEach((item) => {
         toDoCards.push(
+            ///Pass k twice as key cannot be prop
             <ToDo value={item} deprcTDList={deprcTDList} key={k} k={k} />
         );
         k++;
