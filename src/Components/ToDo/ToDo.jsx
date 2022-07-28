@@ -28,9 +28,11 @@ const ToDo = ({ value, deprcTDList, k }) => {
                 type="checkbox"
                 onChange={handleStrike}
             />
-            <p className="to-do__title" style={{ textDecoration: style }}>
-                {value}
-            </p>
+            <input
+                className="to-do__title"
+                defaultValue={value}
+                style={{ textDecoration: style }}
+            />
             <button className="to-do__delete" onClick={handleDeprcTD}>
                 |||
             </button>
